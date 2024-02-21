@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Article Input Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    </head>
+
+    <style>
+        html, body
+        {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+            background-color: #bbceb2;
+        }
+
+        a
+        {
+            padding: 8px 16px;
+            background: #5ca740;
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover
+        {
+            background-color: #808080;
+            color: white;
+        }
+
+        input
+        {
+            width: 150px;
+            height: 30px;
+            font-size: 20px;
+        }
+    </style>
+
+    <body>
+        <h1 style="text-align: center;">Article Input Form</h1>
+
+        <form id="articleInputForm" style="text-align: center;">
+            <input type="text" name="Article ID" placeholder="Article ID">
+            <input type="text" name="Article Name" placeholder="Article">
+            <input type="text" name="Price" placeholder="Price">
+            <input type="text" name="Article Type" placeholder="Article Type">
+            <button type="button" onclick="submitCustomerForm()">Submit</button>
+        </form>
+
+        <div id="feedback" style="display: none; text-align: center;">
+            <p id="feedbackMessage"></p>
+            <a href="maintenance.html">Back to Maintenance Page</a>
+        </div>
+
+        <script>
+            const userInputForm = document.getElementById("articleInputForm");
+            const feedbackSection = document.getElementById("feedback");
+
+            function submitCustomerForm() {
+                const feedbackMessage = document.getElementById("feedbackMessage");
+                feedbackMessage.innerHTML = "Article data submitted successfully!";
+                feedbackSection.style.display = "block";
+                userInputForm.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

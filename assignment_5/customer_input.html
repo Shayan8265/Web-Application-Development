@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Input Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    </head>
+
+    <style>
+        html, body
+        {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+            background-color: #bbceb2;
+        }
+
+        a
+        {
+            padding: 8px 16px;
+            background: #5ca740;
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover
+        {
+            background-color: #808080;
+            color: white;
+        }
+
+        input
+        {
+            width: 150px;
+            height: 30px;
+            font-size: 20px;
+        }
+    </style>
+
+    <body>
+        <h1 style="text-align: center;">Customer Input Form</h1>
+
+        <form id="customerInputForm" style="text-align: center;">
+            <input type="text" name="User ID" placeholder="User ID">
+            <input type="text" name="User Type" placeholder="User Type">
+            <input type="text" name="Customer Name" placeholder="Customer Name">
+            <input type="text" name="Email" placeholder="Email">
+            <input type="text" name="Payment Info" placeholder="Payment Info">
+            <input type="text" name="Order's Date" placeholder="Order's Date">
+            <input type="text" name="Address" placeholder="Address">
+            <input type="text" name="Phone Number" placeholder="Phone Number">
+            <button type="button" onclick="submitCustomerForm()">Submit</button>
+        </form>
+
+        <div id="feedback" style="display: none; text-align: center;">
+            <p id="feedbackMessage"></p>
+            <a href="maintenance.html">Back to Maintenance Page</a>
+        </div>
+
+        <script>
+            const userInputForm = document.getElementById("customerInputForm");
+            const feedbackSection = document.getElementById("feedback");
+
+            function submitCustomerForm() {
+                const feedbackMessage = document.getElementById("feedbackMessage");
+                feedbackMessage.innerHTML = "Customer data submitted successfully!";
+                feedbackSection.style.display = "block";
+                userInputForm.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
