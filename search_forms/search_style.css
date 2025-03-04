@@ -1,0 +1,67 @@
+/* Body styling */
+body {
+    background-color: #324065;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card wrapper for the form */
+.card-wrapper {
+    background-color: #1C2541;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 100px auto; /* Center the form and provide space for the top bar */
+    text-align: center;
+    color: #fff;
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #d4d4d4;
+}
+
+/* Input Fields */
+.input-text-box {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #4C5B70;
+    outline: none;
+    background-color: #1C2541;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.input-text-box:focus {
+    border-color: #7DA9F1;
+    background-color: #283656;
+}
+
+/* Buttons */
+.input-button, .back-button {
+    background: linear-gradient(45deg, #007BFF, #586A87);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.input-button:hover, .back-button:hover {
+    background: linear-gradient(45deg, #586A87, #007BFF);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}

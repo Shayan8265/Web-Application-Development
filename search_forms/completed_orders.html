@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="search_style.css">
+    <title>Search Completed Orders</title>
+</head>
+
+<div class="topbar">
+    <img class="topbar-logo" src="../assets/techive_logo.png" alt="Logo Image">
+    <a class="button" href="../mainpage.html">HOME</a>          
+    <a class="button" id="buy">BUY</a>
+    <a class="button" id="search" href="../search_central.html">SEARCH</a>
+    <a class="button" id="input" href="../input_central.html">INPUT</a>
+    <a class="button" id="imprint" href="../imprint.html">IMPRINT</a>
+</div>
+
+<body>
+    <div class="card-wrapper">
+        <h2>Search Completed Order</h2>
+        <form action="../search_connect.php" method="post">
+            <input type="hidden" name="input_type" value="completed_orders">
+            <div>
+                <h3>Search for a Completed Order</h3>
+                <div class="form-input-block">
+                    <label class="search-label" for="order_id">Order ID:</label>
+                    <input id="order_id" name="order_id" class="input-text-box" type="text" placeholder="Enter Order ID" required>
+                </div>
+            </div>
+            <input type="submit" value="Search" class="input-button">
+        </form>
+    </div>
+
+    <a href="../search_central.html">
+        <button class="back-button">Back</button>
+    </a>
+</body>
+</html>
