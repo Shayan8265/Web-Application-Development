@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "input.js"></script>
+</head>
+
+<div class = "topbar">
+    <img class = "topbar-logo" src = "assets/techive_logo.png" alt = "Logo Image">
+    <a class = "button" href = "mainpage.html">HOME</a>          
+    <a class = "button" id = "buy">BUY</a>
+    <a class="button" id="search" href="search_central.html">SEARCH</a>
+    <a class = "button" href = "input_central.html" id = "input">INPUT</a>
+    <a class = "button" href = "imprint.html" id = "imprint">IMPRINT</a>
+</div>
+
+<body style = "background-color: #324065;">
+    <div id = "content">
+        <img class="bgimg" src = "assets/bg_img.png" alt = "Background Image">
+        <div class="center-container">
+            <div class="form-card">
+                <form action = "">
+                    <label for = "input-type-selector" class = "input-label">Input Type:</label>
+                    <select id = "input-type-selector">
+                        <option selected disabled hidden value = "none">Please choose an option.</option>
+                        <option value = "forms/customer.html">Customer</option>
+                        <option value = "forms/buyer.html">Buyer</option>
+                        <option value = "forms/seller.html">Seller</option>
+                        <option value = "forms/electronics.html">Electronics</option>
+                        <option value = "forms/h_electronics.html">Household Electronics</option>
+                        <option value = "forms/c_electronics.html">Consumer Electronics</option>
+                        <option value = "forms/order.html">Order</option>
+                        <option value = "forms/pickup.html">Pickup</option>
+                        <option value = "forms/delivery.html">Delivery</option>
+                        <option value = "forms/buys.html">Buys</option>
+                        <option value = "forms/sells.html">Sells</option>
+                    </select>
+                    <input type = "button" value = "Continue" class = "input-button" onclick = "goToSelected()">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

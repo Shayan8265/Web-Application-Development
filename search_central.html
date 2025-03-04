@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "input.js"></script>
+</head>
+
+<div class = "topbar">
+    <img class = "topbar-logo" src = "assets/techive_logo.png" alt = "Logo Image">
+    <a class = "button" href = "mainpage.html">HOME</a>          
+    <a class = "button" id = "buy">BUY</a>
+    <a class="button" id="search" href="search_central.html">SEARCH</a>
+    <a class = "button" href = "input_central.html" id = "input">INPUT</a>
+    <a class = "button" href = "imprint.html" id = "imprint">IMPRINT</a>
+</div>
+
+<body style = "background-color: #324065;">
+    <div id = "content">
+        <img class="bgimg" src = "assets/bg_img.png" alt = "Background Image">
+        <div class="center-container">
+            <div class="form-card">
+                <form action = "">
+                    <label for = "input-type-selector" class = "search-label">Search Type:</label>
+                    <select id = "input-type-selector">
+                        <option selected disabled hidden value = "none">Please choose an option.</option>
+                        <option value = "search_forms/total_orders.html">Total Orders</option>
+                        <option value = "search_forms/seller_products.html">Seller Products</option>
+                        <option value = "search_forms/completed_orders.html">Completed Orders</option>
+                    </select>
+                    <input type = "button" value = "Continue" class = "search-button" onclick = "goToSelected()">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

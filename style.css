@@ -1,0 +1,164 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+.topbar{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    background: #517195;
+    overflow: hidden;
+    z-index: 1;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.topbar-logo {
+    position: absolute;
+    left: 80px;  /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Centers the logo vertically */
+    width: 135px; /* Adjust size as needed */
+    height: auto;
+}
+
+.topbar a {
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 12%;
+}
+
+.topbar a:hover {
+    color: white;
+}
+
+.topbar a.active {
+    background-color: darkblue;
+    color: white;
+}
+
+.button {
+    top: 50%;
+}
+
+.search 
+{
+    float: right;
+    padding: 6px;
+    border: black;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.about { 
+    color: whitesmoke;
+    position: absolute;
+    left: 44%;
+    top: 65%;
+}
+
+.bgimg {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: -1; /* Send image to background */
+}
+
+.middle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.desc
+{
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.desc2{
+    text-align: center;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.form-card {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card_wrapper {
+    text-align: center;
+    margin: 3% auto;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #181613;
+    width: 30%;
+    min-width: 600px;
+    padding: 5%;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+select, .input-button, input {
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(171, 171, 171);
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-text-box {
+    width: 50%;
+}
+
+.input-number-box {
+    width: 20%;
+}
+
+.form-input-block {
+    display: block;
+    margin: 3%;
+}
+
+#input-result {
+    margin: 3%;
+}
