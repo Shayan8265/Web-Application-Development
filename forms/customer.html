@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="forms_style.css">
+</head>
+
+<div class = "topbar">
+    <img class = "topbar-logo" src = "../assets/techive_logo.png" alt = "Logo Image">
+    <a class="button" href="../mainpage.html">HOME</a>          
+    <a class="button" id="buy">BUY</a>
+    <a class="button" id="search" href="../search_central.html">SEARCH</a>
+    <a class="button" id="input" href = "../input_central.html">INPUT</a>
+    <a class="button" href="../imprint.html">IMPRINT</a>
+</div>
+
+<body style = "background-color: #324065; color:black">
+    <div class="card-wrapper">
+    <h2>Input Customer</h2>
+    <form action="../connect.php" method="post">
+    <input type="hidden" name="input_type" value="customer">
+        <div>
+            <h3> Customer </h3>
+            <div class="form-input-block">
+                <label class="input-label" for="customer-id">ID:</label>
+                <input id="customer-id" name="id" class="input-text-box" type="text" placeholder="Enter Customer ID.">
+            </div>
+
+            <div>
+                <h3>Personal Details</h3>
+                <div class="form-input-block">
+                    <label class="input-label" for="customer-name">Name:</label>
+                    <input id="customer-name" name="name" class="input-text-box" type="text" placeholder="Enter Customer name.">
+                </div>
+
+                <div class="form-input-block">
+                    <label class="input-label" for="customer-email">Email:</label>
+                    <input id="customer-email" name="email" class="input-text-box" type="email" placeholder="Enter Customer email.">
+                </div>
+
+                <div class="form-input-block">
+                    <label class="input-label" for="customer-phone">Phone Number:</label>
+                    <input id="customer-phone" name="phone" class="input-text-box" type="tel" placeholder="Enter Phone Number">
+                </div>
+
+                <div class="form-input-block">
+                    <label class="input-label" for="customer-address">Address:</label>
+                    <input id="customer-address" name="address" class="input-text-box" type="text" placeholder="Enter Address">
+                </div>
+            </div>
+            <input type="submit" value="Add Media" class="input-button">
+        </form>
+    </div>
+
+    <a href="../input_central.html">
+    <button class="back-button">Back</button>
+</a>
+
+
+
+</body>
+
+</html>
